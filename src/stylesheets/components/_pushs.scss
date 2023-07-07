@@ -1,0 +1,58 @@
+.push {
+    @extend .position-relative, .overflow-hidden;
+    & > .bg-yellow {
+        @extend .p-2, .justify-content-end, .vstack;
+        min-height: 375px;
+        background-color: var(--yellow-gradient-bg);
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    @include media-breakpoint-up(md) {
+        & > .bg-yellow {
+            & > .stripe {
+                &:nth-child(2) {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    &.web-exclu {
+        @include media-breakpoint-up(md) {
+            background: no-repeat url("assets/svg/push1.svg"), var(--yellow-gradient-bg) !important;
+            background-position: right !important;
+            & > .bg-yellow {
+                background: transparent;
+                & > .stripe {
+                    transform: translate(-49%) rotate(25deg) !important;
+                }
+            }
+        }
+    }
+    &.brand-exclu {
+        @include media-breakpoint-up(md) {
+            background: no-repeat url("assets/svg/push2.svg"), var(--yellow-gradient-bg) !important;
+            background-position: right !important;
+            & > .bg-yellow {
+                background: transparent;
+                & > .stripe {
+                    transform: translate(calc(-56% + 80px)) rotate(-23deg) !important;
+                }
+            }
+        }
+    }
+    &.exclu {
+        @include media-breakpoint-up(md) {
+            background: no-repeat url("assets/svg/push3.svg"), var(--yellow-gradient-bg) !important;
+            background-position: bottom right !important;
+            & > .bg-yellow {
+                background: transparent;
+                & > .stripe {
+                    transform: translate(-49%) rotate(22deg) !important;
+                }
+            }
+        }
+    }
+
+    //div > div:nth-child(2)
+}

@@ -1,13 +1,20 @@
-import { Stripe } from "./components/Stripe";
-import { Menu } from "./components/Menu";
-import { ProductsContent } from "./components/sliders/ProductsContent";
-import { BrandsContent } from "./components/sliders/BrandsContent";
-import { SportsContent } from "./components/sliders/SportsContent";
+import {
+  Stripe,
+  Menu,
+  ProductsContent,
+  BrandsContent,
+  SportsContent,
+  Catalog,
+  WebExclu,
+  BrandExclu,
+  Exclu,
+} from "./components/";
+
 function App() {
   return (
     <main className="">
       <section style={{ height: "230px" }}>
-        <div className="d-flex h-100">
+        <div className="grid-col-6 h-100">
           <div className="d-flex p-1 justify-content-center  bg-yellow">
             <div className="align-self-center">
               <div>
@@ -32,7 +39,7 @@ function App() {
             </div>
           </div>
           <div
-            className="flex-grow-1 bg-no-repeat bg-size-cover bg-position-center"
+            className="bg-no-repeat bg-size-cover bg-position-center"
             style={{
               backgroundColor: "black",
               backgroundImage: "url(assets/svg/boxe.svg)",
@@ -149,29 +156,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="position-relative overflow-hidden">
-        <div
-          className="bg-yellow p-2 justify-content-end vstack"
-          style={{
-            minHeight: "375px",
-          }}
-        >
-          <Stripe
-            options={{
-              style: {
-                transform: "translate(-47%) rotate(24deg)",
-              },
-            }}
-          />
-          <div>
-            <h3 className="heading font-size-40px">
-              sélection
-              <br />
-              <span className="stroke">exceptionnelle</span>
-            </h3>
-          </div>
-        </div>
-      </section>
+      <Exclu />
       <section>
         <div className="slider products ps-0">
           <ProductsContent />
@@ -180,104 +165,20 @@ function App() {
           <button className="btn">Toute la sélection</button>
         </div>
       </section>
-      <section className="position-relative overflow-hidden">
-        <div
-          className="bg-yellow p-2 justify-content-end vstack"
-          style={{
-            minHeight: "375px",
-          }}
-        >
-          <Stripe
-            options={{
-              style: {
-                transform: "translate(-47%) rotate(25deg)",
-              },
-            }}
-          />
-          <Stripe
-            options={{
-              style: {
-                transform: "translate(-53%) rotate(-24deg)",
-              },
-            }}
-          />
-          <h4 className="heading font-size-23px">
-            <span className="italic">exclusivité web</span>
-          </h4>
-          <h3 className="heading font-size-40px">
-            black friday sur
-            <br />
-            <span className="stroke">les grandes</span> marques
-          </h3>
-        </div>
-      </section>
+      <BrandExclu />
       <section>
         <div className="slider gap-1">
           <BrandsContent />
         </div>
       </section>
-      <section className="position-relative overflow-hidden">
-        <div
-          className="bg-yellow p-2 justify-content-end vstack"
-          style={{
-            minHeight: "375px",
-          }}
-        >
-          <Stripe
-            options={{
-              style: {
-                transform: "translate(-48%) rotate(27deg)",
-              },
-            }}
-          />
-          <Stripe
-            options={{
-              style: {
-                transform: "translate(-53%) rotate(-24deg)",
-              },
-            }}
-          />
-          <div className="z-index-1">
-            <h4 className="heading font-size-23px">
-              <span className="italic">exclusivité web</span>
-            </h4>
-            <h3 className="heading font-size-40px">
-              les sports
-              <br />
-              <span className="stroke">en black fridays !</span>
-            </h3>
-          </div>
-        </div>
-      </section>
+      <WebExclu />
       <section>
         <div className="slider gap-1">
           <SportsContent />
         </div>
       </section>
       <section>
-        <div className="text-center">
-          <div className="font-size-0 pt-1">
-            <img
-              src="assets/svg/couv_dep.svg"
-              alt="couv_dep"
-              className="img-fluid"
-            />
-          </div>
-          <div className="bg-yellow gap-1 p-2 vstack">
-            <div>
-              <h3 className="heading font-size-60px">
-                <span className="italic color-white">E-</span>
-                catalogue
-              </h3>
-              <div className="font-size-14px">
-                Découvrez notre toute dernière sélection running
-              </div>
-            </div>
-            <div>
-              <button className="btn">Découvrir</button>
-            </div>
-          </div>
-        </div>
+        <Catalog />
       </section>
     </main>
   );

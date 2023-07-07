@@ -186,8 +186,9 @@
 }
 
 .bg-yellow {
-  background: linear-gradient(205.36deg, #ffe600 41.81%, #ffac00 89.85%);
+  background: var(--yellow-gradient-bg);
 }
+
 .bg-grey-lighter {
   background-color: var(--semantics-grey-lighter-bg);
 }
@@ -245,4 +246,15 @@
 
 .white-space-no-space {
   white-space: nowrap;
+}
+
+.grid-col-6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.align-self-center {
+  align-self: center;
 }

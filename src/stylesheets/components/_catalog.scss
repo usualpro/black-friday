@@ -1,0 +1,16 @@
+.catalog {
+    @extend .text-center, .vstack, .overflow-hidden, .position-relative;
+    .stripe {
+        @extend .visibility-hidden;
+    }
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        background: linear-gradient(205.36deg, #ffe600 41.81%, #ffac00 89.85%);
+        .bg-yellow {
+            background: transparent;
+        }
+        .stripe {
+            visibility: visible;
+        }
+    }
+}
