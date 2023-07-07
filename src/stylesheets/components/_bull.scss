@@ -1,5 +1,6 @@
 .bull {
     @extend .position-relative, .d-inline-block;
+    color: var(--semantics-white-text);
     & > span {
         @extend .position-relative;
     }
