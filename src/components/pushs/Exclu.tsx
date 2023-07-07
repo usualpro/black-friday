@@ -2,12 +2,7 @@ import { Stripe } from "../Stripe";
 
 export const Exclu = () => (
   <section className="push exclu">
-    <div
-      className="bg-yellow p-2 justify-content-end vstack"
-      style={{
-        minHeight: "375px",
-      }}
-    >
+    <div className="bg-yellow p-2 justify-content-end vstack">
       <Stripe
         options={{
           style: {

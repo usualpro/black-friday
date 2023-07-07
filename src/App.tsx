@@ -1,5 +1,4 @@
 import {
-  Stripe,
   Menu,
   ProductsContent,
   BrandsContent,

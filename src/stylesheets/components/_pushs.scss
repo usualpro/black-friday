@@ -2,7 +2,7 @@
     @extend .position-relative, .overflow-hidden;
     & > .bg-yellow {
         @extend .p-2, .justify-content-end, .vstack;
-        min-height: 375px;
+        min-height: 500px;
         background-color: var(--yellow-gradient-bg);
     }
     background-size: contain;
@@ -19,8 +19,8 @@
     }
     &.web-exclu {
         @include media-breakpoint-up(md) {
-            background: no-repeat url("assets/svg/push1.svg"), var(--yellow-gradient-bg) !important;
-            background-position: right !important;
+            background: no-repeat url("/assets/svg/push1.svg"), var(--yellow-gradient-bg) !important;
+            background-position: right bottom !important;
             & > .bg-yellow {
                 background: transparent;
                 & > .stripe {
@@ -31,8 +31,8 @@
     }
     &.brand-exclu {
         @include media-breakpoint-up(md) {
-            background: no-repeat url("assets/svg/push2.svg"), var(--yellow-gradient-bg) !important;
-            background-position: right !important;
+            background: no-repeat url("/assets/svg/push2.svg"), var(--yellow-gradient-bg) !important;
+            background-position: right bottom !important;
             & > .bg-yellow {
                 background: transparent;
                 & > .stripe {
@@ -43,7 +43,7 @@
     }
     &.exclu {
         @include media-breakpoint-up(md) {
-            background: no-repeat url("assets/svg/push3.svg"), var(--yellow-gradient-bg) !important;
+            background: no-repeat url("/assets/svg/push3.svg"), var(--yellow-gradient-bg) !important;
             background-position: bottom right !important;
             & > .bg-yellow {
                 background: transparent;
