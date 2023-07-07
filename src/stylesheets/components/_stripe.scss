@@ -1,0 +1,9 @@
+.stripe {
+    @extend .bg-black, .p-1, .hstack, .gap-1, .position-absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transform-origin: center;
+    & > span {
+        @extend .d-inline-flex, .white-space-no-space, .font-size-37px;
+    }
+}

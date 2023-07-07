@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+@import "vendors/normalize";
+
+// 3. Base stuff
+@import "base/base", "base/fonts", "base/typography", "../../public/assets/fonts/AmsiProNarw/", "base/helpers",
+    "base/colors";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer";
+
+// 5. Components
+@import "components/button", "components/container", "components/slider", "components/sticker", "components/patch",
+    "components/menu", "components/bull", "components/stripe";
+
+// 6. Page-specific styles
+@import "pages/home";
+
+// 7. Themes
+@import "themes/default";

@@ -1,0 +1,24 @@
+:root {
+    --colors-grey: #393938;
+    --colors-black: #000000;
+    --colors-grey-light: #3c3c3b;
+    --colors-grey-lighter: #f6f5f3;
+    --colors-white: #ffffff;
+    --colors-green: #81bc00;
+    --colors-blue: #164194;
+    --colors-red: #e30613;
+    --colors-yellow: #ffe660;
+    --semantics-grey-text: var(--colors-grey);
+    --semantics-grey-border: var(--colors-grey);
+    --semantics-blue-text: var(--colors-blue);
+    --semantics-white-text: var(--colors-white);
+    --semantics-white-bg: var(--colors-white);
+    --semantics-red-text: var(--colors-red);
+    --semantics-yellow-text: var(--colors-yellow);
+    --semantics-grey-light-text: var(--colors-grey-light);
+    --semantics-grey-border: var(--colors-grey);
+    --semantics-blue-bg: var(--colors-blue);
+    --semantics-green-bg: var(--colors-green);
+    --semantics-black-bg: var(--colors-black);
+    --semantics-grey-lighter-bg: var(--colors-grey-lighter);
+}

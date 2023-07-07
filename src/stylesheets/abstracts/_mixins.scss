@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if $breakpoint == xs {
+    @content;
+  } @else if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media (min-width: $breakpoint-xxl) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint specified.";
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: calc($breakpoint-sm - 0.02px)) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: calc($breakpoint-md - 0.02px)) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: calc($breakpoint-lg - 0.02px)) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: calc($breakpoint-xl - 0.02px)) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media (max-width: calc($breakpoint-xxl - 0.02px)) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint specified.";
+  }
+}

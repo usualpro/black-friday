@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    color: var(--semantics-grey-text);
+    border-radius: 1.625rem;
+    border: 1px solid var(--semantics-grey-border);
+    font-size: var(--btn-font-size);
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 600;
+    &.fill {
+        background-color: var(--semantics-white-bg);
+        color: var(--semantics-grey-text);
+        border: 0;
+    }
+    &.primary {
+        background-color: var(--semantics-blue-bg);
+        color: var(--semantics-blue-text);
+        color: var(--semantics-white-text);
+        border: 0;
+    }
+}

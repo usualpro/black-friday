@@ -1,0 +1,15 @@
+.menu {
+    @extend .bg-grey-lighter, .d-flex, .justify-content-center;
+    & > div {
+        @extend .overflow-x-scroll, .p-2, .hstack, .gap-1, .align-items-end;
+        button {
+            @extend .text-uppercase;
+            font-weight: 400;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--semantics-grey-border);
+            padding: 0.5rem;
+            color: var(--semantics-grey-text);
+        }
+    }
+}

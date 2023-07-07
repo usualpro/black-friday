@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "AmsiProNarw";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProNarw-SemiBold.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProNarw-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmsiProNarw";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProNarw-SemiBoldItalic.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProNarw-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmsiProCond-UltraItalic";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProCond-UltraItalic.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProCond-UltraItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmsiProCond-Ultra";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProCond-Ultra.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProCond-Ultra.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmsiProNarw";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProNarw-Black.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProNarw-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AmsiProNarw";
+    src: url("/assets/fonts/AmsiProNarw/AmsiProNarw-Bold.woff2") format("woff2"),
+        url("/assets/fonts/AmsiProNarw/AmsiProNarw-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,33 @@
+.slider {
+    @extend .d-flex, .overflow-x-scroll, .w-100, .px-2;
+    &.products {
+        & > div {
+            @extend .p-1;
+            border-right: 1px solid #d3d3d3;
+            background: white;
+            &:last-child {
+                border-right: none;
+            }
+        }
+        border-bottom: 1px solid #d3d3d3;
+        border-top: 1px solid #d3d3d3;
+    }
+    & > div {
+        min-width: 15rem;
+        height: 422px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__item_content {
+        @extend .d-flex, .h-100, .flex-direction-column, .p-1;
+        color: white;
+        .label {
+            @extend .flex-grow-1, .d-flex, .align-items-center, .justify-content-center;
+            font-size: 30px;
+        }
+        .action {
+            @extend .text-center;
+        }
+    }
+}

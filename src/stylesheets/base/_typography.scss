@@ -1,0 +1,32 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading {
+  font-family: "AmsiProCond-Ultra";
+  text-transform: uppercase;
+  margin: 0;
+  & > .italic {
+    font-family: "AmsiProNarw";
+    font-style: italic;
+    font-weight: 600;
+  }
+  & > .stroke {
+    -webkit-text-stroke: 0.5px black;
+    color: transparent;
+  }
+  & > .stroke.white {
+    -webkit-text-stroke: 0.5px white;
+  }
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
