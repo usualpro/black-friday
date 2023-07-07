@@ -4,5 +4,5 @@
     color: var(--semantics-yellow-text);
     font-family: "AmsiProNarw";
     font-weight: 900;
-    border-radius: 10px;          
+    @include pxToRem("border-radius", 10);
 }

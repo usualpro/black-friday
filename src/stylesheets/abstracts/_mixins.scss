@@ -62,3 +62,7 @@ $breakpoint-xxl: 1400px;
     @error "Invalid breakpoint specified.";
   }
 }
+
+@mixin pxToRem($property, $value) {
+  #{$property}: calc(($value / 16) * 1rem);
+}

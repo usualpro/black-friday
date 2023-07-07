@@ -2,7 +2,7 @@
     @extend .position-relative, .overflow-hidden;
     & > .bg-yellow {
         @extend .p-2, .justify-content-end, .vstack;
-        min-height: 500px;
+        @include pxToRem("min-height", 500);
         background-color: var(--yellow-gradient-bg);
     }
     background-size: contain;
