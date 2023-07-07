@@ -258,3 +258,32 @@
 .align-self-center {
   align-self: center;
 }
+
+.d-none-md {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+.d-md-block {
+  @include media-breakpoint-up(md) {
+    display: block !important;
+  }
+}
+.d-md-flex {
+  @include media-breakpoint-up(md) {
+    display: flex !important;
+  }
+}
+
+.absolute-centering {
+  @extend .position-absolute;
+  left: 50%;
+  top: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
